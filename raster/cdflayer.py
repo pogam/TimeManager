@@ -57,12 +57,12 @@ class CDFRasterLayer(TimeRasterLayer):
 
     @classmethod
     def extract_time_from_bandname(cls, bandName, calendar=DEFAULT_CALENDAR):
-        try:
-            from netcdftime import utime
-            return cls.extract_netcdf_time(bandName, calendar)
-        except:
-            warn("Could not import netcdftime. Using fallback computation")
-            return cls.extract_netcdf_time_fallback(bandName)
+        #try:
+        #    from netcdftime import utime
+        #    return cls.extract_netcdf_time(bandName, calendar)
+        #except:
+        warn("Could not import netcdftime. Using fallback computation")
+        return cls.extract_netcdf_time_fallback(bandName)
 
     @classmethod
     def extract_netcdf_time(cls, bandName, calendar):
