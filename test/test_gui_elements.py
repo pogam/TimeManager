@@ -18,7 +18,6 @@ import TimeManager.time_util as time_util
 import TimeManager.conf as conf
 from . import testcfg
 
-
 __author__ = "Karolina Alexiou"
 __email__ = "karolina.alexiou@teralytics.ch"
 
